@@ -1,0 +1,3 @@
+[submodule "Atolla/moduls/spdlog"]
+	path = Atolla/moduls/spdlog
+	url = https://github.com/gabime/spdlog
