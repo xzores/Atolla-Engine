@@ -1,3 +1,6 @@
-[submodule "Atolla/sub/spdlog"]
-	path = Atolla/sub/spdlog
+[submodule "Application/spdlog"]
+	path = Application/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Atolla/glfw"]
+	path = Atolla/glfw
+	url = https://github.com/glfw/glfw
