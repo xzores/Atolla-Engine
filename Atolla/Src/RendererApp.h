@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <Windows.h>
+#include <GL\glew.h>
 
 class Renderer : public Atolla::Application {
 

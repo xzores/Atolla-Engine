@@ -2,21 +2,29 @@
 
 static std::vector<std::thread*> a;
 
-static void WorkerLoop() {
+void Worker::WorkerLoop() {
+
+	while (running)
+	{
+
+	}
 
 }
 
 void Worker::Init() {
-	
-	static std::vector<std::thread*> a;
-	
-	&workers = &a;
 
 	unsigned concurentThreadsSupported = std::thread::hardware_concurrency();
 
-	while (workers.size() < concurentThreadsSupported) {
-		workers.push_back(new std::thread(WorkerLoop));
+	while (getWorkers().size() < concurentThreadsSupported) {
+		std::thread* t;
+		getWorkers().push_back(new std::thread(t));
 	};
 
 }
 
+std::vector<std::thread*> getWorkers() {
+
+	static std::vector<std::thread*> a = std::vector<std::thread*>();
+
+	return a;
+}

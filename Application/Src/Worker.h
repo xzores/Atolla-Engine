@@ -7,10 +7,12 @@
 class Worker {
 
 private:
-	Worker();
-	~Worker();
 
-	static std::vector<std::thread*> workers;
+	static bool running = true;
+	
+	void WorkerLoop();
+
+	static std::vector<std::thread*> getWorkers();
 
 public:
 

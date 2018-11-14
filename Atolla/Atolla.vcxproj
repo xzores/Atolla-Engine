@@ -55,7 +55,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)Application\Includes;$(SolutionDir)Application\spdlog\include\;$(SolutionDir)Atolla\glfw\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application\Includes;$(SolutionDir)Application\spdlog\include\;$(SolutionDir)Atolla\Glew\include\;$(SolutionDir)Atolla\glfw\include\</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -65,7 +65,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)Application\Includes;$(SolutionDir)Application\spdlog\include\;$(SolutionDir)Atolla\glfw\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Application\Includes;$(SolutionDir)Application\spdlog\include\;$(SolutionDir)Atolla\Glew\include\;$(SolutionDir)Atolla\glfw\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -73,6 +73,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Glew\include\GL\eglew.h" />
+    <ClInclude Include="Glew\include\GL\glew.h" />
+    <ClInclude Include="Glew\include\GL\glxew.h" />
+    <ClInclude Include="Glew\include\GL\wglew.h" />
     <ClInclude Include="glfw\include\GLFW\glfw3.h" />
     <ClInclude Include="glfw\include\GLFW\glfw3native.h" />
     <ClInclude Include="Inlcudes\Atolla.h" />
